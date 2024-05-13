@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Manrope", sans-serif;
+}
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+> 💡 These are just the design sizes. Ensure content is responsive and meets WCAG requirements by testing the full range of screen sizes from 320px to large screens.
+
+## Colors
+
+### Primary
+
+- Light Cyan: hsl(193, 38%, 86%)
+- Neon Green: hsl(150, 100%, 66%)
+
+### Neutral
+
+- Grayish Blue: hsl(217, 19%, 38%)
+- Dark Grayish Blue: hsl(217, 19%, 24%)
+- Dark Blue: hsl(218, 23%, 16%)
+
+## Typography
+
+### Body Copy
+
+- Font size (quote): 28px
+
+### Font
+
+- Family: [Manrope](https://fonts.google.com/specimen/Manrope)
+- Weights: 800 */
+.container {
+  background-color: hsl(218, 23%, 16%);
+  display: grid;
+  place-items: center;
+  height: 100dvh;
+  max-width: 100vw;
+}
+.advice {
+  background-color: white;
+  width: 478px;
+  padding: 3rem;
+  background-color: hsl(217, 19%, 24%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.3rem;
+  gap: 2rem;
+}
+.advice h5 {
+  color: hsl(150, 100%, 66%);
+  letter-spacing: 3px;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+.advice_p {
+  font-size: 2.4rem;
+  color: hsl(193, 38%, 86%);
+}
+.btn_div {
+  position: relative;
+  text-align: center;
+}
+
+.btn {
+  padding: 3%;
+  text-align: center;
+  border-radius: 1000px;
+  background-color: hsl(150, 100%, 66%);
+  opacity: 0.8;
+  position: absolute;
+  top: 0%;
+  left: 46%;
+}
+.btn:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+.slider {
+  margin-bottom: 2rem;
+}
+.slider_img_box {
+  text-align: start;
+}
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 30.1875em) {
+  html {
+    font-size: 7px;
+  }
+  .advice {
+    width: 90%;
+    padding: 2rem;
+    position: relative;
+  }
+  .desktop {
+    display: none;
+  }
+  .slider_img_box {
+    text-align: center;
+  }
+  .mobile {
+    display: block;
+    width: 100%;
+    margin-left: 2vw;
+  }
+  .btn {
+    left: 33vw;
+  }
+}
+@media screen and (max-width: 25em) {
+  .btn {
+    left: 32vw;
+  }
+  .mobile {
+    margin-left: 0vw;
+  }
+}
+@media screen and (max-width: 21em) {
+  .btn {
+    left: 85px;
+  }
+  .slider_img_box {
+    text-align: start;
+  }
+  .mobile {
+    margin-left: -43px;
+  }
+}
